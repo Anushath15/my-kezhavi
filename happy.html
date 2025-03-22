@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happiness Generator</title>
+    <link rel="stylesheet" href="D:\happy\happy.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Indie+Flower&family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="background-container">
+        <div class="bubble-container"></div>
+    </div>
+
+    <div class="name-input-container" id="nameInputContainer">
+        <h1 class="welcome-text">Welcome to the Happiness Generator!</h1>
+        <p>Enter your name to start the fun:</p>
+        <input type="text" id="nameInput" placeholder="Your name here">
+        <button id="startButton" class="bounce-button">Let's Go!</button>
+    </div>
+
+    <div class="content-container hidden" id="mainContent">
+        <header>
+            <h1 id="personalGreeting" class="rainbow-text">Hello, Friend!</h1>
+        </header>
+
+        <div class="fun-buttons">
+            <button id="jokeButton" class="bounce-button">Tell me a joke</button>
+            <button id="complimentButton" class="bounce-button">Give me a compliment</button>
+            <button id="soundButton" class="bounce-button">Play a silly sound</button>
+            <button id="confettiButton" class="bounce-button">Celebration time!</button>
+            <button id="memeButton" class="bounce-button">Show me a meme</button>
+            <button id="nameFireworksButton" class="bounce-button">Name Fireworks!</button>
+            <button id="dancingButton" class="bounce-button">Let's Dance!</button>
+            <button id="surpriseButton" class="bounce-button">Surprise Me!</button>
+        </div>
+
+        <div class="display-area">
+            <div id="jokeDisplay" class="display-box hidden">
+                <h3>Here's a joke for you:</h3>
+                <p id="jokeText"></p>
+            </div>
+            
+            <div id="complimentDisplay" class="display-box hidden">
+                <h3>Just so you know:</h3>
+                <p id="complimentText"></p>
+            </div>
+            
+            <div id="memeDisplay" class="display-box hidden">
+                <h3>Enjoy this meme:</h3>
+                <img id="memeImage" src="" alt="Random meme">
+            </div>
+            
+            <div id="dancingDisplay" class="display-box hidden">
+                <div id="danceFloor"></div>
+            </div>
+        </div>
+
+        <div id="petContainer" class="pet-container">
+            <div id="pet" class="pet">🐶</div>
+            <div id="petHearts" class="pet-hearts hidden">❤️❤️❤️</div>
+        </div>
+
+        <div id="fireworksContainer" class="fireworks-container"></div>
+    </div>
+
+    <audio id="laughSound" src="https://www.soundjay.com/human/sounds/laugh-1.mp3" preload="auto"></audio>
+    <audio id="popSound" src="https://www.soundjay.com/button/sounds/button-09.mp3" preload="auto"></audio>
+    <audio id="applauseSound" src="https://www.soundjay.com/human/sounds/applause-8.mp3" preload="auto"></audio>
+    <audio id="tadaSound" src="https://www.soundjay.com/misc/sounds/tada-1.mp3" preload="auto"></audio>
+    <audio id="boingSound" src="https://www.soundjay.com/cartoon/sounds/cartoon-boing-01.mp3" preload="auto"></audio>
+
+    <script src="D:\happy\happy.js"></script>
+</body>
+</html>
